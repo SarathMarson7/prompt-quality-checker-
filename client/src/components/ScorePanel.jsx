@@ -45,7 +45,8 @@ export default function ScorePanel({ result }) {
       </div>
 
       <div className="criteria-list">
-        {Object.entries(criteria).map(([key, { score, tip }]) => {
+        {Object.keys(CRITERION_LABELS).map(key => {
+          const { score, tip } = criteria[key]
           const cls = colorClass(score)
           return (
             <div key={key} className="criterion">

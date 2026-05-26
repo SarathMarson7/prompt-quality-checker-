@@ -39,7 +39,7 @@ export default function PromptInput({ text, onChange }) {
               onClick={() => onChange(value)}
               role="button"
               tabIndex={0}
-              onKeyDown={e => e.key === 'Enter' && onChange(value)}
+              onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && onChange(value)}
               aria-label={`Load ${key} prompt sample`}
             >
               {key.charAt(0).toUpperCase() + key.slice(1)} prompt
