@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => ({
   root: 'client',
   base: mode === 'production' ? '/prompt-quality-checker/' : '/',
   build: {
-    outDir: '../client/dist',
+    outDir: 'dist',
     emptyOutDir: true,
   },
 }))
