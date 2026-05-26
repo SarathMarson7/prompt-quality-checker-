@@ -4,7 +4,7 @@ const VAGUE_WORDS = /\b(something|maybe|kind of|a bit|sort of|stuff|things|whate
 
 const ACTION_VERBS = /\b(write|list|summarise|summarize|generate|extract|explain|describe|analyse|analyze|compare|create|identify|suggest|provide|review|evaluate|translate|convert|format|return|output)\b/gi
 
-const CONTEXT_PHRASES = /\b(because|the goal is|for a |i need this for|the context is|we are|this is for|in order to|so that)\b/gi
+const CONTEXT_PHRASES = /\b(because|the goal is|for a|i need this for|the context is|we are|this is for|in order to|so that)\b/gi
 
 const ROLE_PATTERNS = /\b(act as|you are a|as a [a-z]+|pretend you are|imagine you are|take the role of)\b/gi
 

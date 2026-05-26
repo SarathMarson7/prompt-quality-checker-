@@ -33,6 +33,10 @@ describe('context', () => {
     const result = score('Write a poem')
     assert.strictEqual(result.criteria.context.score, 0)
   })
+  test('detects "for a" phrase', () => {
+    const result = score('Write this for a marketing team.')
+    assert.ok(result.criteria.context.score >= 60, 'Expected >= 60 when "for a" is present')
+  })
 })
 
 describe('role', () => {
@@ -62,7 +66,7 @@ describe('format', () => {
 })
 
 describe('length', () => {
-  test('5 words scores 0', () => {
+  test('4 words scores 0', () => {
     const result = score('Write me a poem')
     assert.strictEqual(result.criteria.length.score, 0)
   })
