@@ -4,6 +4,8 @@ A fully static React + Vite web app that analyses any AI prompt and scores it ac
 
 **Live demo:** [sarathmarson7.github.io/prompt-quality-checker-](https://sarathmarson7.github.io/prompt-quality-checker-/)
 
+> **Note:** The live demo is hosted on the author's personal GitHub Pages. Clone and run locally for development (see [Getting Started](#getting-started)).
+
 ---
 
 ## Screenshots
